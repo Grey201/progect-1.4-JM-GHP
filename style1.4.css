@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Medium.eot');
+    src: url('./fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/TTLakes-Medium.woff') format('woff'),
+    url('./fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+font-family: 'TT Lakes';
+        src: url('./fonts/');
+        src: url('./fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/TTLakes-Bold.woff') format('woff'),
+        url('./fonts/TTLakes-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal; 
+        }
+/*******общие настройки********* */
+
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+.conteiner{
+    margin: 0;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 2px -40px 100px -10px rgb(0, 0, 0, 0.2);
+}
+button{
+    border: 0;
+    background-color:#FFFFFF;
+    padding:0;
+}
+button:hover{
+    filter: hue-rotate(110deg);
+    outline: none; 
+    }
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.menu__link a:hover, .contacts__link a:hover, .languages__link a:hover {
+    color:#7E7E82;
+}
+
+/********header*******************/
+.header-menu{
+    padding-bottom: 30px;
+}
+
+
+.menu__clearfix{
+    width: 70px;
+}
+
+/* *********** main */
+.main-menu .menu{
+    padding-bottom: 300px;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.main-menu .menu .menu__link{
+     padding: 20px 0px;
+
+}
+.menu__link a::before{
+    display: inline-block;
+    content:"";
+    margin-left: -20px;
+    width: 4px;
+    background-color: #41F6D7;
+    height: 32px;
+    vertical-align: middle;
+    opacity: 0;
+    border-radius: 0 15px 15px 0px;
+    margin-right: 24px;
+    
+}
+
+.menu__link a:hover::before{
+    opacity: 1;
+}
+/**************fotter*****************/
+.footer-menu__button{
+    padding-right: 8px;
+}
+.contacts__link{
+    padding:10px 0px;
+}
+.contacts__link:last-child{
+    font-size: 24px;
+    font-weight: bold;
+}
+.languages{
+    display: flex;
+    
+}
+.languages__link{
+    padding: 32px 7px 40px 0;
+}
